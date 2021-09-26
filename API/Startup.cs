@@ -41,7 +41,8 @@ namespace API
                 opt.AddPolicy("CorsPolicy", policy =>
                 {
                     policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200",
-                                                     "https://chariotsfrontend.azurewebsites.net"
+                                                          "http://vehicles-day.azurewebsites.net",
+                                                          "http://localhost:30000"
                     );
                 });
             });
