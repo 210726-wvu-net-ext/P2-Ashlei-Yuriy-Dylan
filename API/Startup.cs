@@ -41,6 +41,7 @@ namespace API
                 opt.AddPolicy("CorsPolicy", policy =>
                 {
                     policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200",
+                                                          "http://vehicles-day.azurewebsites.net",
                                                           "https://vehicles-day.azurewebsites.net",
                                                           "http://localhost:30000"
                     );
